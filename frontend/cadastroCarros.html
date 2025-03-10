@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Empresa de Desenvolvimento</title>
+  <link rel="stylesheet" href="../cadastro.css">
+</head>
+<body class="tudo">
+  <header class="header">
+    <!-- <button id=""></button> -->
+    <h1 id="titulo">ESTACIOCAR</h1>
+  </header>
+  <main>
+    <form class="form" id="formCadastro">
+      
+      <input type="text" id="dono" placeholder="Nome do dono" required>
+
+      <input type="number" id="cpf" placeholder="Cpf do dono" required>
+
+      <input type="text" id="placa" placeholder="Placa do veículo" required>
+
+      <label for="vaga" id="frase_vaga">Escolha uma vaga:</label>
+      <select id="vaga">
+        <option value="Deficiente">Deficeinte</option>
+        <option value="Idoso">Idoso</option>
+        <option value="Gestante">Gestante</option>
+        <option value="Vaga1">Vaga 1</option>
+        <option value="Vaga2">Vaga 2</option>
+        <option value="Vaga3">Vaga 3</option>
+        <option value="Vaga4">Vaga 4</option>
+        <option value="Vaga5">Vaga 5</option>
+        <option value="Vaga6">Vaga 6</option>
+        <option value="Vaga7">Vaga 7</option>
+      </select>
+
+
+      <div class="botoes">
+        <button type="submit" class="cadastrar" onclick="cadastrar(event)">Cadastrar</button>
+        <button class="cadastrar" onclick="irParaLista(event)">Ver a lista dos carros</button>
+        <!-- <a class="ancora" href="../frontend/lista.html">Ver a lista dos carros</a> -->
+      </div>
+    </form>
+    <table class="tabelaVagas">
+      <thead>
+        <tr>
+          <th>Vagas Ocupadas</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <!-- aqui dentro tem os dados dos carros estacionados na garagem -->
+        </tr>
+      </tbody>
+    </table>
+</main>
+
+  <script src="./cadastro.js"></script>
+</body>
+</html>

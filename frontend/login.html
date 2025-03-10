@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Empresa de Desenvolvimento</title>
+  <link rel="stylesheet" href="../login.css">
+</head>
+<body>
+  <form>
+    <h1 id="titulo">Login</h1>
+    <form>
+      <!-- <label for="email">Cpf:</label> -->
+      <input type="text" id="cpf" placeholder="CPF" required>
+
+      <input type="password" id="senha" placeholder="Senha" required>
+      <button type="submit" class="logar" onclick="logar(event)">Entrar</button>
+    </form>
+    <p id="texto">Ainda não possui conta? cadastre-se <a href="./cadastroUsuario.html">aqui</a></p> 
+  </form>
+
+  <script src="./logar.js"></script>
+</body>
+</html>

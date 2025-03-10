@@ -1,0 +1,77 @@
+:root{
+    --cor-principal: #071330;
+    --cor-sec: #0C4160 ;
+    --cor-terc: #738FA7;
+    --cor-quart: #C3CEDA;
+}
+*{
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    color: var(--cor-quart);
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+#cpf,#senha,#nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8vh;
+    border: none;
+    width: 25vw;
+    height: 6vh;
+    background-color: var(--cor-quart);
+}
+
+.logar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8vh;
+    border: none;
+    width: 7vw;
+    height: 7vh;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--cor-quart); /* Adiciona um efeito suave */
+}
+
+.logar:hover {
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2vh; */
+
+    gap: 4vw;
+}
+
+#texto{
+    font-size: 1,5vw;
+    color: var(--cor-quart);
+}

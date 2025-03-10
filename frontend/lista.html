@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estacionamento - ESTACIOCAR</title>
+  <link rel="stylesheet" href="../listas.css">
+</head>
+<body class="tudo">
+    <header class="header">
+        <h1 id="titulo">ESTACIOCAR</h1>
+        <h3 id="subtitulo">Lista dos carros estacionados:</h3>
+    </header>
+    <main>
+        <table class="tabelaCarros">
+            <thead>
+              <tr>
+                <th>Dono</th>
+                <th>Placa</th>
+                <th>CPF</th>
+                <th>Vaga</th>
+                <th>Sair</th>
+                <th>Alterar dados</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                <!-- aqui dentro tem os dados dos carros estacionados na garagem -->
+              </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Modal para edição -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharModal()">&times;</span>
+            <h2>Editar Carro</h2>
+            <label for="nome">Dono:</label>
+            <input type="text" id="nome" required>
+            <label for="placa">Placa:</label>
+            <input type="text" id="placa" required>
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" required>
+            <label for="vaga" id="frase_vaga">Escolha uma vaga:</label>
+            <select id="vaga">
+              <option value="Deficiente">Deficeinte</option>
+              <option value="Idoso">Idoso</option>
+              <option value="Gestante">Gestante</option>
+              <option value="Vaga1">Vaga 1</option>
+              <option value="Vaga2">Vaga 2</option>
+              <option value="Vaga3">Vaga 3</option>
+              <option value="Vaga4">Vaga 4</option>
+              <option value="Vaga5">Vaga 5</option>
+              <option value="Vaga6">Vaga 6</option>
+              <option value="Vaga7">Vaga 7</option>
+            </select>
+            <button onclick="editarCarro()">Salvar</button>
+        </div>
+    </div>
+
+    <script src="./listar.js"></script>
+</body>
+</html>

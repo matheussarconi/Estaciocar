@@ -1,0 +1,93 @@
+:root{
+  --cor-principal: #071330;
+  --cor-sec: #0C4160 ;
+  --cor-terc: #738FA7;
+  --cor-quart: #C3CEDA;
+}
+body {
+  background-color: var(--cor-principal) ;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--cor-quart);
+  font-size: 10vh;
+}
+#subtitulo{
+  display: flex;
+  color: var(--cor-quart);
+  align-items: center;
+  justify-content: center;
+}
+table {
+  margin-left: 25vw;
+  width: 50vw;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid var(--cor-quart);
+}
+th {
+  background-color: var(--cor-sec);
+  color: #000000;
+}
+td{
+  background-color: var(--cor-terc);
+  color: #000000;
+}
+#remover,#editar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  /* background-color: red; */
+  border-radius: 1vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+#remover:hover{
+  transform: scale(1.1); /* Aumenta o botão em 10% */
+}
+#editar:hover{
+  transform: scale(1.1);
+}
+
+/* Adicione isso ao seu arquivo CSS existente */
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}

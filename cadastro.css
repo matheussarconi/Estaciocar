@@ -1,0 +1,148 @@
+:root{
+    --cor-principal: #071330;
+    --cor-sec: #0C4160 ;
+    --cor-terc: #738FA7;
+    --cor-quart: #C3CEDA;
+}
+*{
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: var(--cor-principal);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10vh;
+    color: var(--cor-quart);
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+#dono, #cpf, #placa, #senha,#nome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8vh;
+    border: none;
+    width: 25vw;
+    height: 6vh;
+    background-color: var(--cor-quart);
+}
+
+#frase_vaga{
+    display: flex;
+    color: var(--cor-quart);
+    font-size: 4vh;
+    
+}
+#vaga{
+    display: flex;
+    border-radius: 0.8vh;
+    border: none;
+    width: 25vw;
+    height: 6vh; 
+    background-color: var(--cor-quart);
+}
+.cadastrar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8vh;
+    border: none;
+    width: 7vw;
+    height: 7vh;
+    transition: transform 0.3s ease-in-out;
+    background-color: var(--cor-quart); /* Adiciona um efeito suave */
+}
+
+.cadastrar:hover {
+    transform: scale(1.1); /* Aumenta o botão em 10% */
+}
+.botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 2vh; */
+
+    gap: 4vw;
+}
+/* #lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+} */
+/* .ancora{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: var(--cor-quart);
+    height: 7vh;
+    width: 10vw;
+    border-radius: 0.8vh;
+
+} */
+
+/* lista de vagas */
+
+
+
+table {
+    display: flex;
+    flex-direction: row;
+    border-collapse: collapse;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+thead {
+    display: flex;
+
+}
+
+tbody {
+    display: flex;
+    flex-direction: row;
+}
+
+tr {
+    display: flex;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid var(--cor-quart);
+}
+
+th {
+    background-color: var(--cor-sec);
+    color: #000000;
+}
+
+td {
+    background-color: var(--cor-terc);
+    color: #000000;
+}
